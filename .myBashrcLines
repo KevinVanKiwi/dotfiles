@@ -1,5 +1,0 @@
-# MY Stuff
-export EDITOR=vim
-alias lsd='ls -d */'
-set -o vi
-bind -m vi-insert "\C-l":clear-screen
