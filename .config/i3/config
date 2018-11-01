@@ -223,7 +223,7 @@ gaps outer 15
 # Map Print-Key as Mod and disable keyrepeat for it
 exec --no-startup-id xmodmap -e 'keycode 107 = Super_R' && xset -r 107
 # Set background
-exec --no-startup-id feh --bg-fill /home/kevin/Pictures/moon.jpg
+exec --no-startup-id feh --bg-fill $HOME/Pictures/moon.jpg
 # Activate NetworkManager-Applet
 #exec --no-startup-id nm-applet --sm-disable
 

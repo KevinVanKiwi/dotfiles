@@ -41,3 +41,6 @@ urxvt.scrollBar: false
 *.color7:       #f8f8f2
 *.color15:      #f9f8f5
 
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
