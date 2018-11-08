@@ -223,8 +223,8 @@ menu-0-0 = 
 menu-0-0-exec = poweroff
 menu-0-1 = 
 menu-0-1-exec = reboot
-menu-0-2 = 
-menu-0-2-exec = nm-connection-editor &
+;menu-0-2 = 
+;menu-0-2-exec = nm-connection-editor &
 ;menu-0-3 = 
 ;menu-0-3-exec = xfce4-terminal --command=wttr.sh --geometry=125x42
 ;menu-0-3 = 
