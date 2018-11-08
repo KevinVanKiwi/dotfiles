@@ -166,7 +166,6 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # MY color settings
-
 set $bg-color               #2f343f
 set $inact-bg-color         #282b33
 set $text-color             #f3f4f5
@@ -223,7 +222,7 @@ gaps outer 15
 # Map Print-Key as Mod and disable keyrepeat for it
 exec --no-startup-id xmodmap -e 'keycode 107 = Super_R' && xset -r 107
 # Set background
-exec --no-startup-id feh --bg-fill $HOME/Pictures/moon.jpg
+exec --no-startup-id feh --bg-fill /usr/share/pixmaps/firewatch.png
 # Activate NetworkManager-Applet
 #exec --no-startup-id nm-applet --sm-disable
 

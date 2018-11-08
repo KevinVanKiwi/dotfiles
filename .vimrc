@@ -3,11 +3,11 @@ set showmatch               " Show matching brackets.
 set ignorecase              " Do case insensitive matching
 set mouse=v                 " middle-click paste with mouse
 set hlsearch                " highlight search results
-set tabstop=4               " number of columns occupied by a tab character
-set softtabstop=4           " see multiple spaces as tabstops so <BS> does the 
+set tabstop=2               " number of columns occupied by a tab character
+set softtabstop=2           " see multiple spaces as tabstops so <BS> does the 
                             " right thing
 set expandtab               " converts tabs to white space
-set shiftwidth=4            " width for autoindents
+set shiftwidth=2            " width for autoindents
 set autoindent              " indent a new line the same amount as the line 
                             " just typed
 set number                  " add line numbers
@@ -23,6 +23,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'rust-lang/rust.vim'
 
 Plug 'BrainDeath0/Hypsteria'
+Plug 'chriskempson/base16-vim'
 "Plug 'w0rp/ale'
 
 Plug 'vim-syntastic/syntastic'
@@ -56,10 +57,14 @@ au FileType css setlocal sw=2 sts=2 ts=2
 au FileType javascript setlocal sw=2 sts=2 ts=2
 au FileType html setlocal sw=2 sts=2 ts=2
 
-set t_Co=256
-colorscheme hypsteria
-set background=light
-hi Normal ctermbg=NONE
+au FileType c setlocal sw=2 sts=2 ts=2
+
+"set t_Co=256
+"colorscheme hypsteria
+let base16colorspace=256
+colorscheme base16-gruvbox-dark-soft
+"set background=dark
+"hi Normal ctermbg=NONE
 syntax on
 
 set rtp+=/usr/lib/python3.7/site-packages/powerline/bindings/vim/

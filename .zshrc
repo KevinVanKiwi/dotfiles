@@ -21,3 +21,9 @@ alias ls='ls --color=auto'
 alias lsd='ls -d */'
 alias ll='ls -lah'
 alias config='/usr/bin/git --git-dir=/home/kevin/.cfg/ --work-tree=/home/kevin'
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
